@@ -1,0 +1,15 @@
+[package]
+name = "abc215"
+version = "0.1.0"
+edition = "2018"
+
+# dependencies added to new project
+[dependencies]
+ proconio = "*"
+ itertools = "*"
+ competitive = { git = "https://github.com/tanakh/competitive-rs.git" }
+ primal = "*"
+
+[profile.release]
+lto = true
+panic = 'abort'
